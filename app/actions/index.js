@@ -14,7 +14,7 @@ export const fetchDataSuccess = movieData => {
 };
 
 export const fetchDataError = bool => ({
-  type: 'FETCH_DATA_ERROR',
+  type: 'FETCH_DATA_ERROR', 
   fetchDataError: bool
 });
 

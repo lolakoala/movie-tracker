@@ -4,3 +4,4 @@ node_modules/
 ./app/bundle.js.map
 
 apikey.js
+.env
