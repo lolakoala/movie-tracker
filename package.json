@@ -30,6 +30,7 @@
     "express-cors": "0.0.3",
     "history": "^4.6.3",
     "node-fetch": "^2.0.0",
+    "pg": "^7.4.1",
     "pg-promise": "^3.2.3",
     "raf": "^3.4.0",
     "react": "^16.0.0",
