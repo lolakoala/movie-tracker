@@ -5,7 +5,7 @@ var options = {
 };
 
 var pgp = require('pg-promise')(options);
-var connectionString = process.env.NODE_ENV === 'production' ? process.env.DATABASE_URL + `?ssl=true` : 'postgres://localhost:5432/users';
+var connectionString = process.env.NODE_ENV === 'production' ? 'postgres://apiqonrjubakhf:b887a235de80423480b8b4500319f4c8797950adeab7cf049d3be6ef5aa491c3@ec2-23-21-166-148.compute-1.amazonaws.com:5432/deglrpq2a140da' + `?ssl=true` : 'postgres://localhost:5432/users';
 var db = pgp(connectionString);
 
 function getAllUsers(req, res, next) {
