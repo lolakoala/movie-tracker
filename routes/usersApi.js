@@ -17,8 +17,8 @@ router.post('/users/new', db.createUser);
 router.post('/users/favorites/new', db.addFavorite);
 router.get('/users/:id/favorites', db.getAllFavorites);
 router.delete('/users/:id/favorites/:movie_id', db.deleteFavorite);
-router.get('/movies', async (req, res, next) => {
-  const movies = await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.apikey}&language=en-US`)
+router.get('/movies', (req, res, next) => {
+  const movies = fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=${process.env.apikey}&language=en-US`)
     .then(data => data.json())
     .then((data) => {
       res.status(200).json(data);
